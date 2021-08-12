@@ -34,11 +34,11 @@ async def start(event):
     hmmwow = devlop.first_name
     vent = event.chat_id
     mypic = Config.ASSISTANT_START_PIC
-    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy Master [{hmmwow}](tg://user?id={bot.uid}) \nYou Can Talk/Contact My Master Using This Bot. \n\nIf You Want Your Own Assistant You Can Deploy From Button Below. \n\nPowered By [VirtualUserbot](github.com/inukaasith/virtualuserbot)"
+    starttext = f"Hello, {firstname} ! Nice To Meet You,  I Am Nelly,I manage groups though with few features. My master is still developing me. \n\nMy Master [{hmmwow}](tg://user?id={bot.uid}) \nAdd me to your group and see what i can do. \n\nPowered By [KayAspirerProject](https://t.me/KayAspirerProject)"
     if event.sender_id == bot.uid:
         await tgbot.send_message(
             vent,
-            message=f"Hi Master, It's Me {bot_id}, Your Assistant ! \nWhat You Wanna Do today ?",
+            message=f"Hi Master, It's Me {bot_id}, Your Assistant ! \nWhat You Wanna Do today ?
             buttons=[
                 [custom.Button.inline("Show Users 🔥", data="users")],
                 [custom.Button.inline("Commands For Assistant", data="gibcmd")],
@@ -60,8 +60,8 @@ async def start(event):
             caption=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.inline("Deploy your Fire-X", data="deploy")],
-                [Button.url("Contact Dev ❓", "t.me/Mrkahno")],
+                [custom.Button.inline("My support group", data="Group")],
+                [Button.url("Contact owner❓", "t.me/aspirer2")],
             ],
         )
         if os.path.exists(mypic):
@@ -71,16 +71,16 @@ async def start(event):
 # Data's
 
 
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"deploy")))
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"Group")))
 async def help(event):
     await event.delete()
     if event.query.user_id is not bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message="You Can Deploy Fire-X In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
+            message="I can manage your group but with a handful features Fire-X In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
             buttons=[
-                [Button.url("Deploy Tutorial is coming soon 📺", "coming soon")],
-                [Button.url("Github Repo ❓", "github.com/FireXbot/Fire-X")],
+                [Button.url("Join our group", "for more")],
+                [Button.url("support", "https://t.me/Kayaspirerproject.com/FireXbot/Fire-X")],
             ],
         )
 
