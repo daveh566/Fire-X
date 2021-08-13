@@ -167,7 +167,7 @@ if ENV:
         ALIVE_IMAGE = os.environ.get("ALIVE_IMAGE", None)
         ASSISTANT_START_PIC = os.environ.get(
             "ASSISTANT_START_PIC",
-            "https://telegra.ph/file/c1847e49157e1502f8501.jpg",
+            "https://telegra.ph/file/de27740783234c27fa834.jpg",
         )
         TESSDATA_PREFIX = os.environ.get(
             "TESSDATA_PREFIX", "/usr/share/tesseract-ocr/4.00/tessdata"
