@@ -80,7 +80,7 @@ async def help(event):
             message="I can manage your group but with a handful features Fire-X In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
             buttons=[
                 [Button.url("Join our group", "for more")],
-                [Button.url("support", "https://t.me/Kayaspirerproject.com/FireXbot/Fire-X")],
+                [Button.url("support", "https://t.me/Kayaspirerproject)],
             ],
         )
 
