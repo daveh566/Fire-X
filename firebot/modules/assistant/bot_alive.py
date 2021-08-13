@@ -3,7 +3,7 @@ from firebot.modules import currentversion
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
 PM_IMG = "https://telegra.ph/file/de27740783234c27fa834.jpg"
-pm_caption = "➥ **ASSISTANT IS:** `ONLINE`\n\n"
+pm_caption = "➥ **HEYA NELLY IS:** `ONLINE`\n\n"
 pm_caption += "➥ **SYSTEMS STATS**\n"
 pm_caption += "➥ **Telethon Version:** `1.23.0` \n"
 pm_caption += "➥ **Python:** `3.9.0` \n"
